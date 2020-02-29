@@ -1,0 +1,245 @@
+/* Reset */
+*{
+	padding:0px;
+	margin:0px;
+	box-sizing:border-box
+}
+
+/* Main Styling */
+
+body, html {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	line-height: 1.7em;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+h1, h2, h3 {
+	padding-bottom: 20px;
+}
+
+p {
+	margin: 10px;
+}
+
+/* Utility */
+
+
+.container {
+	margin: auto;
+	max-width: 1350px;
+	overflow: auto;
+	padding: 0 20px;
+}
+
+
+
+/* ---------- Header ---------- */
+header {
+	background-image: url("imagini/header-background.jpg");
+	color: #fff;
+	overflow: auto;
+}
+
+#logo{
+	height:40px;
+}
+
+#navbar a {
+	color: #fff;
+}
+
+#navbar img {
+	margin-top: 10px;
+	background: #444;
+}
+
+#navbar ul {
+	list-style: none;
+	float: right;
+}
+
+#navbar ul li {
+	float: left;
+}
+
+#navbar ul li a {
+	font-size: 13px;
+	margin-top: 10px;
+	display: block;
+	padding: 7px 10px 7px 10px;
+}
+
+#navbar ul li a:hover {
+	background: #444;
+	color: #f7c08a;
+}
+
+
+/* ------------ Footer ------------ */
+
+footer {
+	bottom: 0;
+	background-color: #686868;
+}
+
+#paragraf-footer {
+	text-align: center;
+	margin: auto;
+	color: #fff;
+}
+
+
+/* ---------- Pagina Principala ---------- */
+#content {
+	background: url("imagini/pagina-principala-background.jpg") no-repeat center center/cover;
+}
+
+#content .titlu-sectiune {
+	font-family: Impact, Charcoal, sans-serif;
+	text-align: center;
+	padding-top: 70px;
+	color: #fff;
+}
+
+#content .titlu-sectiune h2{
+	font-size: 40px;
+	line-height: 1.2em;
+}
+
+.pagina-principala {
+	padding-bottom: 330px;
+}
+
+
+article {
+	display: inline-block;
+	/* -------- Pentru trei produse pe coloana: intre 25% si 33% -------- */
+	/* -------- Pentru patru produse pe coloana: intre 20% si 24% -------- */
+	border: 1px solid grey;
+	margin: 10px;
+	padding: 10px;
+	margin-left: 10px;
+}
+
+.produs ul {
+	text-align: center;
+}
+
+.produs .container-imagine img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 170px;
+	height: 170px;
+}
+
+
+.continut-sectiune {
+	margin: auto;
+	max-width: 705px;
+	overflow: auto;
+	padding: 0 10px;
+}
+
+
+.hidden {
+	display: none;
+}
+
+img {
+	max-height: 150px;
+}
+
+#produse {
+	margin-top: 100px;
+}
+
+#partea-de-sus {
+	text-align: center;
+}
+
+/* ----------Pagina Detalii Produs */
+
+.pagina-detalii-produs {
+	background-color: #F0FFFF;
+}
+
+.sectiune-prezentare {
+	padding-top: 10px;
+}
+
+.sectiune-imagine {
+	padding: 10px;
+	display: inline-block;
+	float: left;
+}
+
+.sectiune-cumparare {
+	margin-top: 10px;
+    padding: 10px;
+    padding-bottom: 50px;
+    padding-top: 40px;
+    display: inline-block;
+    float: right;
+    margin-right: 15%;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.sectiune-descriere{
+	clear: both;
+	display: block;
+	padding: 10px;
+	max-width: 730px;
+}
+
+.sectiune-intoarcere {
+	padding-top: 17.1em;
+}
+
+.sectiune-prezentare span{
+	color: #424;
+}
+
+.sectiune-imagine img {
+	max-height: 200px;
+}
+
+.sectiune-cumparare p {
+	margin: 0px;
+}
+
+.sectiune-descriere p {
+	margin: 0px;
+}
+
+/* ----------------------- Pagina Cos de Cumparaturi -------------------- */
+
+.pagina-cos-cumparaturi {
+	background: url("imagini/cos-cumparaturi.jpg") no-repeat center center/cover;
+	padding: 100px;
+	padding-bottom: 480px;
+}
+
+table {
+	background-color: #fff;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 840;
+	padding:5px;
+}
+
+/* ------------------------- Pagina Adaugare Produs */
+
+.adaugare-produs {
+	background-color: #00CED1;
+	padding: 50px;
+	margin-left:400px;
+	margin-top:57px;
+	margin-bottom: 250px;
+}

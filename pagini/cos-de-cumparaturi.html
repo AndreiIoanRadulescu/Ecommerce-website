@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<div class="container pagina-cos-cumparaturi">
+			<table>
+				<thead>
+					<tr>
+						<th>Nume produs</th>
+						<th>Pret produs</th>
+						<th>Valuta</th>
+						<th>Cantitate dorita</th>
+						<th>Schimba cantitatea</th>
+						<th>Subtotal</th>
+						<th>Sterge produs</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="rand hidden" id="rand-sablon">
+						<td class="nume-rand">nume test</td>
+						<td class="pret-rand">pret test</td>
+						<td class="valuta-rand">valuta test</td>
+						<td><input type="number" class="cantitate-rand"></input></td>
+						<td><button class="buton-cantitate">Schimba cantitatea</button></td>
+						<td class="subtotal-rand">subtotal test</td>
+						<td><button class="buton-rand">Scoate produs</button></td>
+						<!-- fa sa se intample dinamic fara refreshuire stergerea si modif-->
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td>
+							<span>Total: </span>
+							<span id="total-pret"></span>
+							<span id="total-valuta"></span>
+						</td>
+						<td>
+							<span>Numar produse: </span>
+							<span id="numar-produse"></span>
+						</td>
+						<td><button id="lansare-comanda">lanseaza comanda</button></td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+	</body>
+</html>
