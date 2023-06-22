@@ -1,245 +1,266 @@
 /* Reset */
-*{
-	padding:0px;
-	margin:0px;
-	box-sizing:border-box
-}
-
-/* Main Styling */
-
-body, html {
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+  }
+  
+  /* Main Styling */
+  body,
+  html {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	line-height: 1.7em;
-}
-
-a {
+  }
+  
+  a {
 	color: #333;
 	text-decoration: none;
-}
-
-h1, h2, h3 {
+  }
+  
+  h1,
+  h2,
+  h3 {
 	padding-bottom: 20px;
-}
-
-p {
+  }
+  
+  p {
 	margin: 10px;
-}
-
-/* Utility */
-
-
-.container {
+  }
+  
+  /* Utility */
+  .container {
 	margin: auto;
-	max-width: 1350px;
-	overflow: auto;
+	max-width: 1200px;
 	padding: 0 20px;
-}
-
-
-
-/* ---------- Header ---------- */
-header {
-	background-image: url("imagini/header-background.jpg");
-	color: #fff;
-	overflow: auto;
-}
-
-#logo{
-	height:40px;
-}
-
-#navbar a {
-	color: #fff;
-}
-
-#navbar img {
+  }
+  
+  /* Header */
+  header {
+	background-color: #f7f7f7;
+	color: #333;
+	padding: 20px;
+  }
+  
+  #logo {
+	height: 40px;
+  }
+  
+  #navbar a {
+	color: #333;
+  }
+  
+  #navbar img {
 	margin-top: 10px;
 	background: #444;
-}
-
-#navbar ul {
+  }
+  
+  #navbar ul {
 	list-style: none;
 	float: right;
-}
-
-#navbar ul li {
-	float: left;
-}
-
-#navbar ul li a {
-	font-size: 13px;
+  }
+  
+  #navbar ul li {
+	display: inline-block;
+	margin-left: 10px;
+  }
+  
+  #navbar ul li a {
+	font-size: 14px;
 	margin-top: 10px;
 	display: block;
-	padding: 7px 10px 7px 10px;
-}
-
-#navbar ul li a:hover {
-	background: #444;
+	padding: 7px 10px;
+	border-radius: 4px;
+	background-color: #f7f7f7;
+  }
+  
+  #navbar ul li a:hover {
+	background-color: #e5e5e5;
 	color: #f7c08a;
-}
-
-
-/* ------------ Footer ------------ */
-
-footer {
-	bottom: 0;
-	background-color: #686868;
-}
-
-#paragraf-footer {
-	text-align: center;
-	margin: auto;
+  }
+  
+  /* Footer */
+  footer {
+	background-color: #333;
 	color: #fff;
-}
-
-
-/* ---------- Pagina Principala ---------- */
-#content {
-	background: url("imagini/pagina-principala-background.jpg") no-repeat center center/cover;
-}
-
-#content .titlu-sectiune {
+	padding: 20px;
+	text-align: center;
+  }
+  
+  /* Main Content */
+  #content {
+	background-color: #fff;
+	padding: 20px;
+  }
+  
+  .titlu-sectiune {
 	font-family: Impact, Charcoal, sans-serif;
 	text-align: center;
 	padding-top: 70px;
-	color: #fff;
-}
-
-#content .titlu-sectiune h2{
-	font-size: 40px;
+	color: #333;
+  }
+  
+  .titlu-sectiune h2 {
+	font-size: 36px;
 	line-height: 1.2em;
-}
-
-.pagina-principala {
-	padding-bottom: 330px;
-}
-
-
-article {
+  }
+  
+  .pagina-principala {
+	padding-bottom: 30px;
+  }
+  
+  article {
 	display: inline-block;
-	/* -------- Pentru trei produse pe coloana: intre 25% si 33% -------- */
-	/* -------- Pentru patru produse pe coloana: intre 20% si 24% -------- */
-	border: 1px solid grey;
+	border: 1px solid #ccc;
 	margin: 10px;
-	padding: 10px;
-	margin-left: 10px;
-}
-
-.produs ul {
+	padding: 20px;
+	width: 250px;
 	text-align: center;
-}
-
-.produs .container-imagine img {
+  }
+  
+  .produs ul {
+	text-align: center;
+	list-style: none;
+	padding: 0;
+  }
+  
+  .produs .container-imagine img {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 170px;
-	height: 170px;
-}
-
-
-.continut-sectiune {
+	margin: 0 auto;
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 50%;
+  }
+  
+  .continut-sectiune {
 	margin: auto;
-	max-width: 705px;
-	overflow: auto;
+	max-width: 900px;
 	padding: 0 10px;
-}
-
-
-.hidden {
+  }
+  
+  .hidden {
 	display: none;
-}
-
-img {
+  }
+  
+  img {
 	max-height: 150px;
-}
-
-#produse {
-	margin-top: 100px;
-}
-
-#partea-de-sus {
+  }
+  
+  #produse {
+	margin-top: 50px;
+  }
+  
+  #partea-de-sus {
 	text-align: center;
-}
-
-/* ----------Pagina Detalii Produs */
-
-.pagina-detalii-produs {
-	background-color: #F0FFFF;
-}
-
-.sectiune-prezentare {
-	padding-top: 10px;
-}
-
-.sectiune-imagine {
-	padding: 10px;
-	display: inline-block;
-	float: left;
-}
-
-.sectiune-cumparare {
-	margin-top: 10px;
-    padding: 10px;
-    padding-bottom: 50px;
-    padding-top: 40px;
-    display: inline-block;
-    float: right;
-    margin-right: 15%;
-    border-left: 1px solid white;
-    border-bottom: 1px solid white;
-}
-
-.sectiune-descriere{
+  }
+  
+  /* Product Details Page */
+  .pagina-detalii-produs {
+	background-color: #f7f7f7;
+	padding: 20px;
+  }
+  
+  .sectiune-prezentare {
+	padding-top: 20px;
+  }
+  
+  .sectiune-imagine {
+	padding: 20px;
+	text-align: center;
+  }
+  
+  .sectiune-cumparare {
+	margin-top: 20px;
+	padding: 20px;
+	border-top: 1px solid #ccc;
+	text-align: center;
+  }
+  
+  .sectiune-descriere {
 	clear: both;
 	display: block;
-	padding: 10px;
-	max-width: 730px;
-}
-
-.sectiune-intoarcere {
-	padding-top: 17.1em;
-}
-
-.sectiune-prezentare span{
-	color: #424;
-}
-
-.sectiune-imagine img {
-	max-height: 200px;
-}
-
-.sectiune-cumparare p {
-	margin: 0px;
-}
-
-.sectiune-descriere p {
-	margin: 0px;
-}
-
-/* ----------------------- Pagina Cos de Cumparaturi -------------------- */
-
-.pagina-cos-cumparaturi {
-	background: url("imagini/cos-cumparaturi.jpg") no-repeat center center/cover;
-	padding: 100px;
-	padding-bottom: 480px;
-}
-
-table {
+	padding: 20px;
+  }
+  
+  .sectiune-intoarcere {
+	padding-top: 10em;
+  }
+  
+  .sectiune-prezentare span {
+	color: #555;
+  }
+  
+  .sectiune-imagine img {
+	max-height: 300px;
+  }
+  
+  .sectiune-cumparare p {
+	margin: 0;
+  }
+  
+  .sectiune-descriere p {
+	margin: 0;
+  }
+  
+  /* Shopping Cart Page */
+  .pagina-cos-cumparaturi {
+	background-color: #f7f7f7;
+	padding: 20px;
+  }
+  
+  table {
 	background-color: #fff;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 840;
-	padding:5px;
-}
-
-/* ------------------------- Pagina Adaugare Produs */
-
-.adaugare-produs {
-	background-color: #00CED1;
-	padding: 50px;
-	margin-left:400px;
-	margin-top:57px;
-	margin-bottom: 250px;
-}
+	margin: 0 auto;
+	width: 100%;
+	max-width: 900px;
+	border-collapse: collapse;
+  }
+  
+  table th,
+  table td {
+	padding: 10px;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+  }
+  
+  table th {
+	background-color: #f7f7f7;
+  }
+  
+  /* Add Product Page */
+  .adaugare-produs {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #ccc;
+	margin: 10px auto;
+	padding: 20px;
+	width: 250px;
+	text-align: center;
+  }
+  
+  .adaugare-produs input,
+  .adaugare-produs textarea,
+  .adaugare-produs button {
+	margin: 10px 0;
+	padding: 8px;
+	width: 100%;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+  }
+  
+  .adaugare-produs textarea {
+	height: 80px;
+  }
+  
+  .adaugare-produs button {
+	background-color: #333;
+	color: #fff;
+	cursor: pointer;
+  }
+  
+  .adaugare-produs button:hover {
+	background-color: #555;
+  }
+  
