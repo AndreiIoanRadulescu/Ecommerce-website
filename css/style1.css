@@ -17,12 +17,6 @@
 	text-decoration: none;
   }
   
-  h1,
-  h2,
-  h3 {
-	padding-bottom: 20px;
-  }
-  
   p {
 	margin: 10px;
   }
@@ -87,6 +81,40 @@
   }
   
   /* Main Content */
+
+  input {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	transition: border-color 0.3s ease-in-out;
+  }
+
+  /* Add focus styles */
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+
+  select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: white; /* Set background color */
+    appearance: none; /* Remove default arrow icon in some browsers */
+    cursor: pointer; /* Change cursor on hover */
+    outline: none; /* Remove default focus outline */
+    transition: border-color 0.3s ease-in-out;
+    text-align: center;
+  }
+
+  /* Add focus styles */
+  select:focus {
+  border-color: #007bff;
+  }
+
   #content {
 	background-color: #fff;
 	padding: 20px;
@@ -105,16 +133,28 @@
   }
   
   .pagina-principala {
-	padding-bottom: 30px;
+	padding-bottom: 5px;
   }
   
   article {
-	display: inline-block;
-	border: 1px solid #ccc;
-	margin: 10px;
-	padding: 20px;
-	width: 250px;
-	text-align: center;
+	border: 1px solid #ddd;
+  border-radius: 8px;
+  padding-top: 5px;
+  overflow: hidden;
+  margin: 0 20px 30px;
+  width: 270px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #f7f7f7;
+  }
+
+  .produs h3 {
+	margin: 10px 0;
+  text-align: center;
+  }
+
+  .produs h4 {
+	margin: 10px 0;
+  text-align: center;
   }
   
   .produs ul {
@@ -131,12 +171,22 @@
 	object-fit: cover;
 	border-radius: 50%;
   }
-  
-  .continut-sectiune {
-	margin: auto;
-	max-width: 900px;
-	padding: 0 10px;
+
+  .produs .buton-produs {
+	display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 0 0 8px 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
   }
+
+  .produs .buton-produs:hover {
+	background-color: #2980b9;
+	}
   
   .hidden {
 	display: none;
@@ -147,7 +197,11 @@
   }
   
   #produse {
-	margin-top: 50px;
+	display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 20px;
   }
   
   #partea-de-sus {
@@ -171,7 +225,7 @@
   
   .sectiune-cumparare {
 	margin-top: 20px;
-	padding: 20px;
+	padding-top: 20px;
 	border-top: 1px solid #ccc;
 	text-align: center;
   }
@@ -179,15 +233,49 @@
   .sectiune-descriere {
 	clear: both;
 	display: block;
-	padding: 20px;
+  }
+
+  .sectiune-descriere h4 {
+	margin: 10px 0 0 0 !important;
+  }
+
+  .buton-adauga-cos {
+	  background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+	  margin-top: 10px;
+  }
+
+  .buton-pagina-produse {
+	background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 15px;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+	    margin-top: 10px;
   }
   
   .sectiune-intoarcere {
-	padding-top: 10em;
+	text-align: center;
   }
   
   .sectiune-prezentare span {
 	color: #555;
+  }
+
+  .sectiune-produs {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 20px;
   }
   
   .sectiune-imagine img {
