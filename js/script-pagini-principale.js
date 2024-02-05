@@ -66,16 +66,12 @@ if (isNaN(productId) && !pagina) {
 				};
 
 				function afiseazaProuse() {
-					if (listaProduse) {
-						Object.keys(listaProduse).forEach(function (item) {
-							if (listaProduse[item] !== null) {
-								if (listaProduse[item].vizibilitate == true || gasesteCale() === "/admin.html") {
-									adaugaProdus(listaProduse[item].nume, listaProduse[item].pret, numeValuta, listaProduse[item].imagine, listaProduse[item].cheie);
-								}
-							}
-						})
-					}
-
+					listaProduse?.filter(produs => produs !== null && produs !== undefined)
+								.forEach(({vizibilitate, nume, pret, imagine, cheie}) => {
+									if (vizibilitate == true || gasesteCale() === "/admin.html") {
+										adaugaProdus(nume, pret, numeValuta, imagine, cheie);
+									}
+								})
 				};
 
 				// ----------------------------Sfarsit functii pagina principala client
